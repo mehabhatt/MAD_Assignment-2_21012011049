@@ -1,4 +1,4 @@
-package com.example.doctorapp
+package com.example.mad_assignment_2_21012011049
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -22,7 +22,7 @@ class DashboardActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         drawerLayout = findViewById(R.id.drawer)
-        actionBarDrawerToggle = ActionBarDrawerToggle(this, drawerLayout, R.string.nav_open, R.string.nav_close)
+       // actionBarDrawerToggle = ActionBarDrawerToggle(this, drawerLayout, R.string.nav_open, R.string.nav_close)
         drawerLayout.addDrawerListener(actionBarDrawerToggle)
         actionBarDrawerToggle.syncState()
 
