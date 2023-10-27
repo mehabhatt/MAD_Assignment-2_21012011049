@@ -33,6 +33,6 @@ class DashboardActivity : AppCompatActivity() {
         if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
             return true
         }
-
+        return super.onOptionsItemSelected(item)
     }
 }
