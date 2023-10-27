@@ -30,20 +30,20 @@
                     <ImageView
                         android:id="@+id/menubtn"
                         android:layout_width="45dp"
-                        android:src="@drawable/menu"
+                        android:src="@drawable/heart"
                         android:layout_height="50dp"/>
 
-                    <de.hdodenhof.circleimageview.CircleImageView
+                  <!--  <ImageView
                         xmlns:app="http://schemas.android.com/apk/res-auto"
                         android:id="@+id/profile"
                         android:layout_width="45dp"
                         android:layout_alignParentRight="true"
                         android:layout_height="45dp"
-                        android:src="@drawable/profile"
+                        android:src="@drawable/heart"
                         app:civ_border_width="2dp"
                         android:elevation="2dp"
                         app:civ_border_color="#f1f1f1"
-                        tools:ignore="MissingClass" />
+                        tools:ignore="MissingClass" /> -->
 
                 </RelativeLayout>
             </androidx.appcompat.widget.Toolbar>
@@ -69,7 +69,7 @@
                 android:background="@drawable/input_style"
                 android:hint="Search Doctor"
                 android:textColor="#000"
-                android:drawableRight="@drawable/searchicon"
+                android:drawableRight="@drawable/heart"
                 android:layout_marginVertical="20dp"
                 android:layout_height="wrap_content"/>
 
@@ -142,7 +142,7 @@
 
                             <ImageView
                                 android:layout_width="wrap_content"
-                                android:src="@drawable/teeth"
+                                android:src="@drawable/heart"
                                 android:layout_height="wrap_content"/>
 
                             <TextView
@@ -208,7 +208,7 @@
 
                             <ImageView
                                 android:layout_width="wrap_content"
-                                android:src="@drawable/teeth"
+                                android:src="@drawable/heart"
                                 android:layout_height="wrap_content"/>
 
                             <TextView
@@ -490,7 +490,7 @@
         app:itemIconTint="@color/white"
         android:layout_gravity="start"
         android:layout_height="match_parent"
-        app:headerLayout="@layout/header_layout"
+        app:headerLayout="@layout/activity_header_layout"
         app:menu="@menu/nav_menu"
         />
 </androidx.drawerlayout.widget.DrawerLayout>
