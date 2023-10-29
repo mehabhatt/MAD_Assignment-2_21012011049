@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#AFCAD6"
     tools:context=".MainActivity">
 
     <ImageView
@@ -116,7 +117,7 @@
         android:layout_height="wrap_content"
         android:background="#00ffffff"
         android:text="SIGN UP"
-        android:textColor="#DB3D91"
+        android:textColor="#5C418F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView4"
