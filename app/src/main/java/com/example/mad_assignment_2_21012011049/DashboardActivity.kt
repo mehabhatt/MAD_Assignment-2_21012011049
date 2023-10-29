@@ -1,38 +1,35 @@
 package com.example.mad_assignment_2_21012011049
 
-import android.os.Bundle
-import android.view.MenuItem
-import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import androidx.drawerlayout.widget.DrawerLayout
-import com.google.android.material.navigation.NavigationView
+import android.os.Bundle
+import android.widget.ArrayAdapter
+import android.widget.ListView
 
 class DashboardActivity : AppCompatActivity() {
-    private lateinit var drawerLayout: DrawerLayout
-    private lateinit var navigationView: NavigationView
-    private lateinit var toolbar: Toolbar
-    private lateinit var actionBarDrawerToggle: ActionBarDrawerToggle
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
-
-        toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
-
-        drawerLayout = findViewById(R.id.drawer)
-
-        drawerLayout.addDrawerListener(actionBarDrawerToggle)
-        actionBarDrawerToggle.syncState()
+        val doctorListView = findViewById<ListView>(R.id.doctorListView)
 
 
-    }
+        val doctorNames = listOf(
+            "Dr. John Doe",
+            "Dr. Jane Smith",
+            "Dr. Michael Johnson",
+            "Dr. Emily Brown",
+            "Dr. David Lee",
+            "Dr. Sarah Wilson"
+        )
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
-            return true
+
+        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, doctorNames)
+
+
+        doctorListView.adapter = adapter
+
+
+        doctorListView.setOnItemClickListener { _, _, position, _ ->
+            val selectedDoctor = doctorNames[position]
         }
-        return super.onOptionsItemSelected(item)
     }
 }

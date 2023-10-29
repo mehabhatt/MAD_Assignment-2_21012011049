@@ -1,63 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:padding="16dp"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="#AFCAD6"
     tools:context=".MainActivity">
 
-<TextView
-android:id="@+id/textView"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_marginTop="48dp"
-android:text="Choose the Best\nConsulting Doctor"
-android:textColor="#673AB7"
-    android:textSize="36sp"
-    android:textStyle="bold"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="16dp"
+        android:text="Doctors' Application"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-<TextView
-android:id="@+id/textView2"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_marginTop="20dp"
-android:fontFamily="sans-serif-condensed"
-android:text="Find the best consulting doctor in your town and city"
-android:textSize="18sp"
-app:layout_constraintEnd_toEndOf="@+id/textView"
-app:layout_constraintStart_toStartOf="@+id/textView"
-app:layout_constraintTop_toBottomOf="@+id/textView" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:alpha="0.7"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-<Button
-android:id="@+id/getstarted"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:layout_marginTop="32dp"
-android:backgroundTint="#673AB7"
-    android:fontFamily="sans-serif-black"
-    android:padding="16dp"
-    android:text="Get Started"
-    android:textColor="#FFFFFF"
-    android:textAllCaps="false"
-    android:textSize="20sp"
-    app:cornerRadius="8dp"
-    app:layout_constraintEnd_toEndOf="@+id/textView2"
-    app:layout_constraintStart_toStartOf="@+id/textView2"
-    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Connect with the Best Doctors"
+        android:textColor="@color/blue"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-<ImageView
-android:id="@+id/imageView"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:layout_marginTop="24dp"
-android:scaleType="fitCenter"
-app:layout_constraintEnd_toEndOf="parent"
-app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintTop_toBottomOf="@+id/getstarted"
-app:srcCompat="@drawable/doctor" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Find top medical professionals in your area"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/getstarted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/card2_style"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="sans-serif-black"
+        android:padding="16dp"
+        android:text="Get Started"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
