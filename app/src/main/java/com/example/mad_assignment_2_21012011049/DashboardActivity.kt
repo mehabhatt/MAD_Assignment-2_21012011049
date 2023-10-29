@@ -26,7 +26,8 @@ class DashboardActivity : AppCompatActivity() {
         )
 
         )
-        val heartcard= findViewById<ImageView>(R.id.heart).setOnClickListener(){
+        val profile = findViewById<ImageView>(R.id.profile).setOnClickListener(){
+            Intent(this@DashboardActivity, Login::class.java).also { startActivity(it) }
 
         }
     }
